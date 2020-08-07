@@ -3,12 +3,12 @@
 module.exports = function (sequelize, DataTypes) {
     const Todo = sequelize.define("Todo", {
         text: {
-            type: DataTypes, STRING,
+            type: DataTypes.STRING,
             allowNull: false
         },
         complete: {
-            tyoe: DataTypes, BOOLEAN,
-            allowNull: false;
+            type: DataTypes.BOOLEAN,
+            allowNull: false
         }
     })
     return Todo;
