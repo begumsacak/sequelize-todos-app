@@ -5,6 +5,9 @@ module.exports = function (sequelize, DataTypes) {
         text: {
             type: DataTypes.STRING,
             allowNull: false
+            validate: {
+                len: {[2, 50]}
+            }
         },
         complete: {
             type: DataTypes.BOOLEAN,
